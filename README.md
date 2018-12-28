@@ -1,6 +1,14 @@
+# start
+```
+var info = new Browser();
+```
+
 # 浏览器信息
 
 ## 浏览器：
+```
+info.browser
+```
 
 Chrome
 
@@ -85,6 +93,9 @@ Suning - 苏宁易购手机客户端
 iQiYi - 爱奇艺手机客户端
 
 ## 内核：
+```
+info.engine
+```
 
 EdgeHTML
 
@@ -97,6 +108,9 @@ WebKit/Blink
 Gecko
 
 ## 系统或平台
+```
+info.os+' '+info.osVersion
+```
 
 Windows
 
@@ -128,8 +142,22 @@ WebOS
 
 ## 设备类型
 
+```
+info.device
+```
+
 PC - 电脑
 
 Tablet - 平板或PDA
 
 Mobile - 手机
+
+## 语言
+
+from javascript api `navigator.language`
+
+转换规则：zh-CN --> zh_CN
+
+```
+info.language
+```
