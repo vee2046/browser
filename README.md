@@ -161,3 +161,9 @@ from javascript api `navigator.language`
 ```
 info.language
 ```
+
+## 设备是否支持触屏
+
+```
+info.isSupportTouch//true/false
+```

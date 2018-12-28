@@ -353,5 +353,7 @@
         } else if (_this.browser == 'Yandex') {
             _this.engine = 'Blink';
         }
+        // 是否支持触屏
+        _this.isSupportTouch = document.hasOwnProperty("ontouchstart");
     };
 }));
