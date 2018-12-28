@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
 		<title>浏览器测试</title>
-		<script src="Browser.js"></script>
+		<script src="Browser.js?201812281345"></script>
 		<style>
 			a{
 				text-decoration: none;
@@ -117,6 +117,22 @@
 									</tr>\
 								</tbody>\
 							</table>');
+							document.writeln('<table>\
+								<thead>\
+									<tr>\
+										<th>是否触屏</th>\
+										<th>无</th>\
+										<th>无</th>\
+									</tr>\
+								</thead>\
+								<tbody>\
+									<tr>\
+										<td>'+info.isSupportTouch+'</td>\
+										<td>无</td>\
+										<td>无</td>\
+									</tr>\
+								</tbody>\
+							</table>');
 						}
 					</script>
 				</div>
@@ -137,5 +153,6 @@
 	  var s = document.getElementsByTagName("script")[0]; 
 	  s.parentNode.insertBefore(hm, s);
 	})();
+
 	</script>
 </html>

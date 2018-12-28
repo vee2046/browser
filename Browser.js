@@ -354,6 +354,12 @@
             _this.engine = 'Blink';
         }
         // 是否支持触屏
-        _this.isSupportTouch = document.hasOwnProperty("ontouchstart");
+        _this.isSupportTouch = function(){
+            var touchObj={};
+            touchObj.isSupportTouch = "ontouchend" in document ? true : false;
+            touchObj.isEvent=touchObj.isSupportTouch?'touchstart':'click';
+            return touchObj.isSupportTouch;
+            return touchObj.isEvent;
+        }();
     };
 }));
